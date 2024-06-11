@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaLinkedinIn, FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useState } from "react";
+import './navbar.css'
 
 const Navber = () => {
 

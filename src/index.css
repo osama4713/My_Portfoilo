@@ -10,41 +10,6 @@ body {
 
 /* // //////////////////////////////////////////////////////////// */
 
-
-.bnt-NB:hover {
-    color: black;
-    transition: 2s;
-}
-
-.bnt-NB::before {
-    position: absolute;
-    content: "";
-
-    width: 0;
-    height: 100;
-
-    top: 0;
-    left: 0;
-
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
-    z-index: -1;
-    transition: 2s;
-}
-
-.bnt-NB:hover::before {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
-
-.icon-NB:hover{
-    background-color: white;
-    color: black;
-}
-
-/* // //////////////////////////////////////////////////////////// */
-
 @keyframes moveUpDown {
 
     0%,
