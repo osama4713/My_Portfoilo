@@ -1,8 +1,8 @@
+
 .bnt-NB:hover {
     color: black;
     transition: 2s;
 }
-
 .bnt-NB::before {
     position: absolute;
     content: "";

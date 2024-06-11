@@ -18,7 +18,7 @@ const Navber = () => {
     };
 
     return (
-        <nav className="bg-white dark:bg-gray-900 opacity-80 fixed w-full z-20 top-0 start-0 dark:border-gray-600 bg-gray-900">
+        <nav className="opacity-80 fixed w-full z-20 top-0 start-0 bg-gray-950">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-12 py-2">
                 <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center text-4xl italic font-bold whitespace-nowrap text-white">Portfolio</span>

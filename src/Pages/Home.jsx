@@ -77,9 +77,9 @@ const Home = () => {
     return (
         <>
             <section className="relative h-[125vh] w-full" id="home">
-                <img className="absolute contrast-200 z-0 w-full h-full object-cover" src="src/assets/Home_img.jpg" alt="Background" />
-                <img className="absolute contrast-125 h-96 w-auto bottom-32 right-28 transform translate-y-1/2 animate-moveUpDown" src="src/assets/Home2.png" alt="Overlay" />
-                <img className="absolute contrast-125 h-40 w-auto bottom-96 right-20 transform -translate-x-1/2 -translate-y-1/2 animate-moveUpDown" src="src/assets/birds.png" alt="Overlay" />
+                <img className="absolute contrast-200 z-0 w-full h-full object-cover" src="public/image/Home_img.jpg" alt="Background" />
+                <img className="absolute contrast-125 h-96 w-auto bottom-32 right-28 transform translate-y-1/2 animate-moveUpDown" src="public/image/Home2.png" alt="Overlay" />
+                <img className="absolute contrast-125 h-40 w-auto bottom-96 right-20 transform -translate-x-1/2 -translate-y-1/2 animate-moveUpDown" src="public/image/birds.png" alt="Overlay" />
 
 
                 <div className="absolute w-[90%] md:w-[500px] mt-36 md:ml-28 mx-5 sm:mx-10">
@@ -179,12 +179,12 @@ const Home = () => {
                 {activeSection === 'first' && (
                     <div className="w-[80%] mx-auto h-full mt-16">
                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            <ImageProject linkImage="src/assets/Project_1.webp" altImage="project_1" />
-                            <ImageProject linkImage="src/assets/Project_2.webp" altImage="project_2" />
-                            <ImageProject linkImage="src/assets/Project_3.webp" altImage="project_3" />
-                            <ImageProject linkImage="src/assets/Project_4.webp" altImage="project_4" />
-                            <ImageProject linkImage="src/assets/Project_5.webp" altImage="project_5" />
-                            <ImageProject linkImage="src/assets/Project_6.webp" altImage="project_6" />
+                            <ImageProject linkImage="public/image/Project_1.webp" altImage="project_1" />
+                            <ImageProject linkImage="public/image/Project_2.webp" altImage="project_2" />
+                            <ImageProject linkImage="public/image/Project_3.webp" altImage="project_3" />
+                            <ImageProject linkImage="public/image/Project_4.webp" altImage="project_4" />
+                            <ImageProject linkImage="public/image/Project_5.webp" altImage="project_5" />
+                            <ImageProject linkImage="public/image/Project_6.webp" altImage="project_6" />
                         </div>
                     </div>
                 )}
@@ -202,7 +202,7 @@ const Home = () => {
                         <div className="max-w-6xl w-full mx-4 lg:mx-auto py-8 lg:py-12">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div className="flex items-center justify-center">
-                                    <img className="contrast-125 h-96 sm:h-auto max-w-md mt-12 sm:mt-0 animate-moveUpDown" src="src/assets/connect.png" alt="Overlay" />
+                                    <img className="contrast-125 h-96 sm:h-auto max-w-md mt-12 sm:mt-0 animate-moveUpDown" src="public/image/connect.png" alt="Overlay" />
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 mt-10 sm:mt-0">Get In Touch</h2>
