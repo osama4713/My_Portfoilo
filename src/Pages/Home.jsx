@@ -6,7 +6,16 @@ import Typed from 'typed.js';
 import ImageProject from "../components/Home/ImageProject";
 import { FaLinkedinIn, FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
+import ImageHome from '../../public/image/Home_img.jpg'
+import manImage from '../../public/image/Home2.png'
+import birdsImage from '../../public/image/birds.png'
+import ProjectImage1 from '../../public/image/Project_1.webp'
+import ProjectImage2 from '../../public/image/Project_2.webp'
+import ProjectImage3 from '../../public/image/Project_3.webp'
+import ProjectImage4 from '../../public/image/Project_4.webp'
+import ProjectImage5 from '../../public/image/Project_5.webp'
+import ProjectImage6 from '../../public/image/Project_6.webp'
+import manImage2 from '../../public/image/connect.png'
 
 
 const Home = () => {
@@ -77,9 +86,9 @@ const Home = () => {
     return (
         <>
             <section className="relative h-[125vh] w-full" id="home">
-                <img className="absolute contrast-200 z-0 w-full h-full object-cover" src="public/image/Home_img.jpg" alt="Background" />
-                <img className="absolute contrast-125 h-96 w-auto bottom-32 right-28 transform translate-y-1/2 animate-moveUpDown" src="public/image/Home2.png" alt="Overlay" />
-                <img className="absolute contrast-125 h-40 w-auto bottom-96 right-20 transform -translate-x-1/2 -translate-y-1/2 animate-moveUpDown" src="public/image/birds.png" alt="Overlay" />
+                <img className="absolute contrast-200 z-0 w-full h-full object-cover" src={ImageHome} alt="Background" />
+                <img className="absolute contrast-125 h-96 w-auto bottom-32 right-28 transform translate-y-1/2 animate-moveUpDown" src={manImage} alt="Overlay" />
+                <img className="absolute contrast-125 h-40 w-auto bottom-96 right-20 transform -translate-x-1/2 -translate-y-1/2 animate-moveUpDown" src={birdsImage} alt="Overlay" />
 
 
                 <div className="absolute w-[90%] md:w-[500px] mt-36 md:ml-28 mx-5 sm:mx-10">
@@ -179,12 +188,12 @@ const Home = () => {
                 {activeSection === 'first' && (
                     <div className="w-[80%] mx-auto h-full mt-16">
                         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            <ImageProject linkImage="public/image/Project_1.webp" altImage="project_1" />
-                            <ImageProject linkImage="public/image/Project_2.webp" altImage="project_2" />
-                            <ImageProject linkImage="public/image/Project_3.webp" altImage="project_3" />
-                            <ImageProject linkImage="public/image/Project_4.webp" altImage="project_4" />
-                            <ImageProject linkImage="public/image/Project_5.webp" altImage="project_5" />
-                            <ImageProject linkImage="public/image/Project_6.webp" altImage="project_6" />
+                            <ImageProject linkImage={ProjectImage1} altImage="project_1" />
+                            <ImageProject linkImage={ProjectImage2} altImage="project_2" />
+                            <ImageProject linkImage={ProjectImage3} altImage="project_3" />
+                            <ImageProject linkImage={ProjectImage4} altImage="project_4" />
+                            <ImageProject linkImage={ProjectImage5} altImage="project_5" />
+                            <ImageProject linkImage={ProjectImage6} altImage="project_6" />
                         </div>
                     </div>
                 )}
@@ -202,7 +211,7 @@ const Home = () => {
                         <div className="max-w-6xl w-full mx-4 lg:mx-auto py-8 lg:py-12">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div className="flex items-center justify-center">
-                                    <img className="contrast-125 h-96 sm:h-auto max-w-md mt-12 sm:mt-0 animate-moveUpDown" src="public/image/connect.png" alt="Overlay" />
+                                    <img className="contrast-125 h-96 sm:h-auto max-w-md mt-12 sm:mt-0 animate-moveUpDown" src={manImage2} alt="Overlay" />
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 mt-10 sm:mt-0">Get In Touch</h2>
