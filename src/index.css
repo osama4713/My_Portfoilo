@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* // //////////////////////////////////////////////////////////// */
+
+body {
+    background-color: black;
+}
+
+/* // //////////////////////////////////////////////////////////// */
+
+
+.bnt-NB:hover {
+    color: black;
+    transition: 2s;
+}
+
+.bnt-NB::before {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 100;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: -1;
+    transition: 2s;
+}
+
+.bnt-NB:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.icon-NB:hover{
+    background-color: white;
+    color: black;
+}
+
+/* // //////////////////////////////////////////////////////////// */
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+.animate-moveUpDown {
+    animation: moveUpDown 2s infinite;
+}
+
+/* // //////////////////////////////////////////////////////////// */
+
+.skill {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: calc(100% - 10px);
+    /* Adjust based on your design */
+    /* margin: 3px; */
+}
+
+.calc {
+    position: relative;
+}
+
+.circle-half {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(100, 100px, 100px, 0);
+    background-color: #3498db;
+    opacity: 0.9;
+}
+
+.half-one.circle-half {
+    clip: rect(30px, 80px, 130px, 40px);
+    background-color: #262525;
+    transform-origin: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    height: 78%;
+}
+
+.skill-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-carousel {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.skill-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.left-arrow,
+.right-arrow {
+    background: #111;
+    /* Adjust based on your design */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background: #333;
+    /* Adjust based on your design */
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.img-home:hover {
+    color: black;
+    transition: 2s;
+}
+
+.img-home::before {
+    position: absolute;
+    content: "";
+
+    width: 100;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(120, 168, 226);
+    opacity: 0;
+    z-index: 1;
+    transition: 2s;
+}
+
+.img-home:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
